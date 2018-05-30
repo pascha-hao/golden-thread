@@ -2,16 +2,23 @@
 <ion-header>
     <ion-navbar>
       <ion-title>
-        <font size=+5><b>Charity Page</b></font>
+            <div align="center"><p style="font-family: Cochin; font-size: 30px;"> Charity Search</p></div>
       </ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>  
+<ion-content padding> 
+        <ion-searchbar
+        [(ngModel)]="myInput"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="onInput($event)"
+        (ionCancel)="onCancel($event)">
+      </ion-searchbar> 
     <ion-list inset>
       <button ion-item *ngFor="let item of items" (click)="navigateTocharityprofilePage(item)">
         {{ item.name }}
       </button>
+      
     </ion-list>
   
 </ion-content>

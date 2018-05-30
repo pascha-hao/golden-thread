@@ -15,11 +15,11 @@ export class CharityPage {
     
     }
     items = [
-        {name: 'every animal charity', description: "This is an every animal charity", donationgoal: "ZAR10000"},
-        {name: 'giraffes', description:"this is a giraffe charity", donationgoal: "ZAR500000"},
-        {name: 'rhinos', description: "this is a rhino charity", donationgoal: "ZAR7000000"},
-        {name: 'lions', description: 'this is a lion charity', donationgoal: "ZAR80000"},
-        {name: 'elephants', description: 'this is an elephant charity', donationgoal: "ZAR2"}
+        {name: 'Cape Town Animal Collective', description: "Give back to the endangered animals of South Africa!", donationgoal: "ZAR10,000"},
+        {name: 'Giraffe.Give', description:"Help giraffes get longer necks!", donationgoal: "ZAR500,000"},
+        {name: 'Rescue Rhinos!', description: "Rescue rhinos fromt the debiliating diesease of diabetes. Donate now! ", donationgoal: "ZAR7,000,000"},
+        {name: 'Lovely Lions Fund', description: 'Help lions get more luscious manes. Donate to this fund for Mane and Tail Shampoo.', donationgoal: "ZAR80,000"},
+        {name: 'Peanuts for Elephants', description: 'Elephants can never have enough peanuts.', donationgoal: "ZAR20"}
 
       ];
 

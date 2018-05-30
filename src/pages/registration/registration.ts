@@ -11,6 +11,8 @@ export class RegistrationPage {
     constructor(public navCtrl: NavController) {
 
     }
+
+    
     navigateToProfile() {
         this.navCtrl.push(ProfilePage)
 

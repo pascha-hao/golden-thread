@@ -1,13 +1,21 @@
 <ion-header>
         <ion-navbar>
           <ion-title>
-            <font size=+5><b>Charity Profile</b></font>
+                <div align="center"><p style="font-family: Cochin; font-size: 30px;"> Charity Profile</p></div>
           </ion-title>
         </ion-navbar>
       </ion-header>
 
-      <ion-content>
-<p>name: {{item.name}}</p>
-<p>description: {{item.description}}</p>
-<p>donation goal: {{item.donationgoal}}</p>
+<ion-content>
+
+        
+    <div align="center" style= "width:300px;height:203px; background-color:#FFF5EE; border-radius:20px; margin: 0 auto;">
+        
+<p style="font-family:Cochin; font-size: 20px;"><b>Name:</b> {{item.name}}</p>
+<p style=" font-family:Cochin;font-size: 20px;"><b>Description:</b> {{item.description}}</p>
+<p style=" font-family:Cochin;font-size: 20px; "><b>Donation Goal:</b> {{item.donationgoal}}</p>
+</div>
+<p></p>
+      <div align="center">
+      <button ion-button align="center" round color="secondary"><ion-icon name="card"></ion-icon>DONATE HERE</button></div>
 </ion-content>

@@ -35,7 +35,7 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #488aff,
-  secondary:  #d2691e,
+  secondary:  #F08080,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
@@ -86,3 +86,7 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+ion-content{
+  background-image: url('https://lonelyplanetimages.imgix.net/mastheads/stock-photo-welcome-to-cape-town-104168527.jpg?sharp=10&vib=20&w=1200');
+}

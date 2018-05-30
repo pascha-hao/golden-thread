@@ -14,7 +14,7 @@ export class ProfilePage {
 
     }
     navigateToHome() {
-        this.navCtrl.push(HomePage);
+        this.navCtrl.popToRoot();
     }
 
     ionViewDidLoad() {
