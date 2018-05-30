@@ -1,7 +1,7 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Profile Page
+            <font size=+2>Profile Page</font>
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -13,12 +13,12 @@
     </p>
 
     <p>
-        Username:
+        Username: {{username}}
     </p>
 
     <p>Interests:</p>
     <p>Biography:</p>
-    
-    <button ion-button (click)="navigateToHome()" color="primary" block>Log Out</button>
+
+    <button ion-button (click)="navigateToHome()" color="secondary" block>Log Out</button>
 
 </ion-content>

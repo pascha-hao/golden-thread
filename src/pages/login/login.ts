@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { ProfilePage } from '../profile/profile'
 
 @Component ({ 
@@ -8,11 +8,21 @@ import { ProfilePage } from '../profile/profile'
 })
 export class LoginPage {
 
-    constructor(public navCtrl: NavController) {
+    public username: String;
+    
+
+    constructor(public navCtrl: NavController, public navParams:NavParams) {
+        this.username= 'pascha.hao@berkeley.edu';
+        
+    
 
     }
     navigateToProfile() {
-        this.navCtrl.push(ProfilePage);
+        this.navCtrl.push(ProfilePage, {
+            username: this.username
+        });
+
+    
     }
 
 }
