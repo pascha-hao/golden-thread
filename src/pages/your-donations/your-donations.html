@@ -14,10 +14,14 @@
 
 
 <ion-content padding>
-    <ion-card>
+    <ion-title>This is how much you've pledged to donate: </ion-title>
+    <p>{{amount}}</p> 
+  
+  <ion-card>
         <ion-card-header>
           Your Donations Portfolio
         </ion-card-header>
+        
         <ion-card-content>
           <canvas #doughnutCanvas></canvas>
         </ion-card-content>

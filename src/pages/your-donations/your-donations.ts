@@ -21,12 +21,22 @@ export class YourDonationsPage {
 
   doughnutChart: any;
 
+  public amount: Number;
+  public amount1: Number;
+  public amount2: Number; 
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.amount= 200;
+    this.amount1= 15;
+    this.amount2= 3;
   }
 
   
   
   ionViewDidLoad() {
+    this.amount = this.navParams.get("amount");
+    this.amount1 = this.navParams.get("amount1");
+    this.amount2 = this.navParams.get("amount2");
     console.log('ionViewDidLoad YourDonationsPage');
     this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
  
@@ -34,8 +44,8 @@ export class YourDonationsPage {
       data: {
           labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
           datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              label: 'Your Donation Portfolio',
+              data: [this.amount , this.amount1, this.amount2, 5, 2, 3],
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
                   'rgba(54, 162, 235, 0.2)',
@@ -57,5 +67,5 @@ export class YourDonationsPage {
 
   });
   }
-
+  
 }

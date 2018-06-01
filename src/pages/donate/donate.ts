@@ -21,8 +21,8 @@ export class DonatePage {
   navigateToOnetime(){
     this.navCtrl.push(OnetimePage);}
 
-    navigateToRenewalPage() {
-      this.navCtrl.push(RenewalPage);
+  navigateToRenewalPage() {
+    this.navCtrl.push(RenewalPage);
   }
   
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { YourDonationsPage} from '../your-donations/your-donations'
+import { YourDonationsPage } from '../your-donations/your-donations'
 /**
  * Generated class for the OnetimePage page.
  *
@@ -21,7 +21,7 @@ export class OnetimePage {
     this.amount= 200;
   }
   navigateToYourDonations() {
-    this.navCtrl.push(YourDonationsPage);
+    this.navCtrl.push(YourDonationsPage, {amount: this.amount});
 }
 
 

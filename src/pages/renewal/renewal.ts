@@ -14,12 +14,17 @@ import { YourDonationsPage } from '../your-donations/your-donations';
   templateUrl: 'renewal.html',
 })
 export class RenewalPage {
+  public amount1: Number;
+  public amount2: Number; 
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.amount1= 15;
+    this.amount2= 3;
   }
 
   navigateToYourDonations() {
-    this.navCtrl.push(YourDonationsPage);
+    this.navCtrl.push(YourDonationsPage, {amount1: this.amount1, amount2: this.amount2});
 }
 
   ionViewDidLoad() {
