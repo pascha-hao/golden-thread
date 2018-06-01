@@ -9,13 +9,15 @@
 <ion-content>
 
         
-    <div align="center" style= "width:300px;height:203px; background-color:#FFF5EE; border-radius:20px; margin: 0 auto;">
-        
-<p style="font-family:Cochin; font-size: 20px;"><b>Name:</b> {{item.name}}</p>
-<p style=" font-family:Cochin;font-size: 20px;"><b>Description:</b> {{item.description}}</p>
-<p style=" font-family:Cochin;font-size: 20px; "><b>Donation Goal:</b> {{item.donationgoal}}</p>
+    <div align="left" class="fullscreen" style= " background-color:  #FFF5EE; margin:30px auto;">
+    <p><ion-img width="150px" height="100px" [src]="item.img"></ion-img></p>       
+    <p style=" font-family: Inherit;font-size: 20px;"><b>Name:</b> {{item.name}}</p>
+    <p style=" font-family: Inherit; font-size: 20px;"><b>Description:</b> {{item.description}}</p>
+    <p style=" font-family: Inherit; font-size: 20px; "><b>Donation Goal:</b> {{item.donationgoal}}</p>
+    
+    
 </div>
-<p></p>
       <div align="center">
-      <button ion-button align="center" round color="secondary"><ion-icon name="card"></ion-icon>DONATE HERE</button></div>
+      <button ion-button (click)="navigateToDonate()" align="center" round color="secondary"><ion-icon name="card"></ion-icon>DONATE HERE</button>
+      <button ion-button  color="secondary" round ><ion-icon name="share-alt"></ion-icon>SHARE</button></div>
 </ion-content>

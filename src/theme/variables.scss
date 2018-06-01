@@ -34,12 +34,14 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:    rgb(0, 153, 255),
   secondary:  #F08080,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #FFD700,
   dark:       #222
 );
+
+
 
 
 // App iOS Variables
@@ -84,9 +86,14 @@ $colors: (
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
+
 @import "noto-sans";
+
 
 ion-content{
   background-image: url('https://lonelyplanetimages.imgix.net/mastheads/stock-photo-welcome-to-cape-town-104168527.jpg?sharp=10&vib=20&w=1200');
+}
+
+p {
+  margin: 30px;
 }

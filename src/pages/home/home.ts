@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { LoginPage } from '../login/login';
+import { NavController, NavParams } from 'ionic-angular';
 import { RegistrationPage } from '../registration/registration';
 import { CharityPage} from '../charity/charity';
+import { ProfilePage} from '../profile/profile';
+
 
 @Component({
   selector: 'page-home',
@@ -10,12 +11,21 @@ import { CharityPage} from '../charity/charity';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  public username: String;
+  
+    
+
+  constructor(public navCtrl: NavController, public navParams:NavParams) {
+      this.username= 'pascha-hao';
+      
+  
 
   }
+  navigateToProfile() {
+      this.navCtrl.push(ProfilePage, {
+          username: this.username
+      });
 
-  navigateToLogin() {
-    this.navCtrl.push(LoginPage)
 
   }
   navigateToRegistration(){
