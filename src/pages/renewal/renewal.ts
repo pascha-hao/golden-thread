@@ -24,7 +24,7 @@ export class RenewalPage {
   }
 
   navigateToYourDonations() {
-    this.navCtrl.push(YourDonationsPage, {amount1: this.amount1, amount2: this.amount2});
+    this.navCtrl.push(YourDonationsPage, {amount1: this.amount1, amount2: this.amount2} );
 }
 
   ionViewDidLoad() {

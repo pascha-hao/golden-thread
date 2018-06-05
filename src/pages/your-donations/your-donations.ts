@@ -15,6 +15,7 @@ import { Chart } from 'chart.js';
   selector: 'page-your-donations',
   templateUrl: 'your-donations.html',
 })
+
 export class YourDonationsPage {
 
   @ViewChild ('doughnutCanvas') doughnutCanvas;
@@ -42,10 +43,10 @@ export class YourDonationsPage {
  
       type: 'doughnut',
       data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          labels: ["Charity1", "Chartity2", "Charity3", "Charity4", "Charity5", "Charity6"],
           datasets: [{
               label: 'Your Donation Portfolio',
-              data: [this.amount , this.amount1, this.amount2, 5, 2, 3],
+              data: [this.amount , this.amount1, this.amount2],
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
                   'rgba(54, 162, 235, 0.2)',

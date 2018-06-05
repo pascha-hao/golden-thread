@@ -16,14 +16,17 @@ import { YourDonationsPage } from '../your-donations/your-donations'
 export class OnetimePage {
 
   public amount: Number;
+  public donated: [{charityName: String , Amount: number}]
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.amount= 200;
+    this.donated= [{ charityName: 'Cape Town Animal Collective', Amount : 500}]
   }
   navigateToYourDonations() {
     this.navCtrl.push(YourDonationsPage, {amount: this.amount});
 }
 
+ 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OnetimePage');
